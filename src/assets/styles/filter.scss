@@ -1,12 +1,15 @@
-.filter {
+.search {
   position: relative;
   height: 100vh;
   padding-top: vw(100);
   padding-bottom: vw(100);
   background-color: var(--bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.filter__wrapper {
+.search__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -21,20 +24,21 @@
   padding: vw(25);
 }
 
-.filter__search {
+.search__content {
   position: relative;
   width: 100%;
 }
 
-.filter__search-input {
+.search__input {
   width: 100%;
   border: 2px solid grey;
   border-radius: 15px;
   height: vw(45);
   padding-left: vw(30);
+  padding-right: vw(15);
 }
 
-.filter__search-svg {
+.search__svg {
   position: absolute;
   top: vw(14);
   left: vw(10);
@@ -43,34 +47,39 @@
   height: vw(20);
 }
 
-.filter__list {
+.search__list {
   display: flex;
   flex-direction: column;
   row-gap: vw(15);
   overflow: auto;
 }
 
-.filter__product {
+.search__product {
   display: flex;
   align-items: center;
   column-gap: vw(15);
 }
 
-.filter__product-info {
+.search__product-info {
   display: flex;
   flex-direction: column;
   row-gap: vw(12);
 }
 
-.filter__product-price {
-  font-weight: bold;
+.search__product-name {
+  font-size: vw(24);
 }
 
-.filter__img {
+.search__product-price {
+  font-weight: 900;
+  font-size: vw(20);
+}
+
+.search__img {
   display: block;
-  width: vw(120);
+  width: vw(100);
   max-width: 100%;
   object-fit: cover;
-  aspect-ratio: 1.06;
+  aspect-ratio: 1;
   border-radius: 10px;
 }
